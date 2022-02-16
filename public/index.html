@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Puzzle Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="loading">
+        <img id="loading-image" src="img/loader.gif" alt="Loading..." />
+    </div>
+    <div id="continueGame"></div>
+    <div class="game-wrapper-class" id="game-wrapper-class">
+        <section class="heading" id="head1">
+            <h2 class="font-size">FIFTEEN PUZZLE
+                <br>
+                GAME
+            </h2>
+        </section>
+        <header class="header-class">
+            <section>
+                <ul class="list-styling">
+                    <li class="moves">Moves<span class="moves-count" id="moves-count">0</span></li>
+                    <li class="time">Time<span class="timer" id="time">00:00</span></li>
+                    <li class="start" id="start"><button class="btn">Start</button></li>
+                    <li class="pause" id="pause"><button class="btn">Pause</button></li>
+                    <li class="reset" id="reset" onClick="resetGame()"><button class="btn">Reset</button>
+                    </li>
+                </ul>
+                <div class="center"><a href="stats.html"><button class="btn leaderboard-btn">Game Statistics
+                        </button></a>
+                </div>
+            </section>
+            <section class="heading" id="head2">
+                <h2 class="font-size">FIFTEEN PUZZLE
+                    <br>
+                    GAME
+                </h2>
+            </section>
+        </header>
+        <section class="play-box" id="play-box">
+            <div class="play" id="play" onclick="playGame()"></div>
+            <div class="game" id="game">
+
+                <div class="game-row">
+                    <div class="pos-row-cell" id="pos-1-1" pos="1">
+                    </div>
+                    <div class="pos-row-cell" id="pos-1-2" pos="2">
+                    </div>
+                    <div class="pos-row-cell" id="pos-1-3" pos="3">
+                    </div>
+                    <div class="pos-row-cell" id="pos-1-4" pos="4">
+                    </div>
+                </div>
+
+                <div class="game-row">
+                    <div class="pos-row-cell" id="pos-2-1" pos="1">
+                    </div>
+                    <div class="pos-row-cell" id="pos-2-2" pos="2">
+                    </div>
+                    <div class="pos-row-cell" id="pos-2-3" pos="3">
+                    </div>
+                    <div class="pos-row-cell" id="pos-2-4" pos="4">
+                    </div>
+                </div>
+
+                <div class="game-row">
+                    <div class="pos-row-cell" id="pos-3-1" pos="1">
+                    </div>
+                    <div class="pos-row-cell" id="pos-3-2" pos="2">
+                    </div>
+                    <div class="pos-row-cell" id="pos-3-3" pos="3">
+                    </div>
+                    <div class="pos-row-cell" id="pos-3-4" pos="4">
+                    </div>
+                </div>
+
+                <div class="game-row">
+                    <div class="pos-row-cell" id="pos-4-1" pos="1">
+                    </div>
+                    <div class="pos-row-cell" id="pos-4-2" pos="2">
+                    </div>
+                    <div class="pos-row-cell" id="pos-4-3" pos="3">
+                    </div>
+                    <div class="pos-row-cell" id="pos-4-4" pos="4">
+                    </div>
+                </div>
+
+            </div>
+            <article class="game-instruction">
+                <h3 class="margin-bottom">INSTRUCTIONS</h3>
+                <p>Move tiles in grid to order them from <strong>1 to 15.</strong> To move a tile you can click on it or
+                    use your
+                    <strong>arrow
+                        keys</strong>. Press <strong>ESC</strong> to pause game.</p>
+            </article>
+
+            <hr>
+        </section>
+        <footer class="footer-class">
+            <div class="game-logo">
+                <img src="img/game-logo.png" alt="Game Logo" class="logo">
+                <strong>15teen Puzzle Game</strong>
+            </div>
+            <p class="copyright">Designed by <strong>Sneha Goel</strong></p>
+        </footer>
+    </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>
