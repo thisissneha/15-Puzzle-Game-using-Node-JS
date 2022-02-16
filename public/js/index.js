@@ -337,7 +337,7 @@ function checkIfAnswerMatched() {
 
 function userWin() {
     let time = localStorage.getItem('Time');
-    postData('http://127.0.0.1:3000/player-stats', data = {
+    postData('/player-stats', data = {
             "moves": `${count}`,
             "time": `${time}`
         })
