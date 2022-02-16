@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // database connection
-const DB = "mongodb+srv://sneha:uKGX6lBnhg7IZcBS@puzzlegame.1u98z.mongodb.net/fifteenPuzzleGame?retryWrites=true";
+const DB = "mongodb+srv://<username>:<password>@puzzlegame.1u98z.mongodb.net/fifteenPuzzleGame?retryWrites=true";
 
 mongoose
     .connect(DB, {
