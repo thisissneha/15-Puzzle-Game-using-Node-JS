@@ -19,6 +19,12 @@ app.use(bodyParser.json());
 app.use(express.static(staticPath));
 
 
+// generate random number for user ID
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
 // routes
 app.get("/", (req, res) => {
     res.send("15-puzzle-game");
@@ -51,7 +57,7 @@ app.post("/player-stats", async (req, res) => {
         } = req.body;
         console.log(`Moves : ${moves} and Time : ${time}`);
         await PuzzleGame.create({
-            userID: `abc_${user_id++}`,
+            userID: 'abc_' + randomInteger(1, 1000),
             moves,
             time,
             timeStamp: Date.now()
