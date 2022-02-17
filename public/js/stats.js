@@ -1,6 +1,6 @@
 // fetch players stats from database
 const ul = document.getElementById('user');
-const url = '/stats/test_id';
+const url = '/stats';
 
 fetch(url)
     .then((response) => {
