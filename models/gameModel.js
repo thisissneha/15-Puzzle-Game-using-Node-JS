@@ -11,6 +11,9 @@ mongoose
 
 // database schema
 const gameSchema = new mongoose.Schema({
+    userID: {
+        type: String
+    },
     moves: {
         type: Number,
         default: 0
