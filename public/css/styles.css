@@ -41,7 +41,7 @@ body {
 
 .game-wrapper-class {
     margin: auto;
-    width: 524px;
+    width: 540px;
 }
 
 .list-styling {
@@ -92,7 +92,7 @@ body {
     background-color: black;
     height: 354px;
     width: 400px;
-    margin: 0px 0.5em;
+    margin: 0px 0.6em;
     padding: 6px 0px;
     border-radius: 10px;
     position: absolute;
