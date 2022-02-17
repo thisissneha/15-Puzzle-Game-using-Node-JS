@@ -38,6 +38,7 @@ if (back_button != null) {
         let gameTime = document.getElementById('time').textContent;
         if (gameTime === '00:00') {
             document.getElementById("play").innerHTML = "PLAY";
+            document.getElementById("resume").style.display = "none";
         }
     });
 }

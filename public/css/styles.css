@@ -41,7 +41,7 @@ body {
 
 .game-wrapper-class {
     margin: auto;
-    width: 540px;
+    width: 550px;
 }
 
 .list-styling {
@@ -69,6 +69,10 @@ body {
     border: none;
 }
 
+.width {
+    width: 110px;
+}
+
 .leaderboard-btn {
     cursor: pointer;
     background-color: #3a7e55;
@@ -92,7 +96,7 @@ body {
     background-color: black;
     height: 354px;
     width: 400px;
-    margin: 0px 0.6em;
+    margin: 0px 0.7em;
     padding: 6px 0px;
     border-radius: 10px;
     position: absolute;
