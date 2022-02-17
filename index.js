@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
     res.send("15-puzzle-game");
 });
 
-app.get("/stats/test_id", async (req, res) => {
+app.get("/stats", async (req, res) => {
     try {
         const details = await PuzzleGame.find({}).sort({
             _id: -1
