@@ -104,7 +104,8 @@ body {
     background-color: rgba(158, 170, 255, 0.37);
 }
 
-.pause {
+.pause,
+.resume {
     display: none;
 }
 

@@ -160,6 +160,7 @@ document.getElementById("play").style.cssText = `
     `;
 
 document.getElementById("start").addEventListener("click", playGame);
+document.getElementById("resume").addEventListener("click", playGame);
 document.getElementById("pause").addEventListener("click", pauseGame);
 
 
@@ -200,6 +201,8 @@ function playGame() {
     let timeElement = document.querySelector('#time');
     let startGame = document.getElementById("start");
     let stopGame = document.getElementById("pause");
+    let ResumeGame = document.getElementById("resume");
+    ResumeGame.style.display = "none";
     startGame.style.display = "none";
     stopGame.style.display = "block";
     changeCellColor();
@@ -219,9 +222,9 @@ function pauseGame() {
       line-height: 322px;
       cursor: pointer;
     `;
-    let startGame = document.getElementById("start");
+    let ResumeGame = document.getElementById("resume");
     let stopGame = document.getElementById("pause");
-    startGame.style.display = "block";
+    ResumeGame.style.display = "block";
     stopGame.style.display = "none";
     clearInterval(gameTime);
     changeCellColor();
