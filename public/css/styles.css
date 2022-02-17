@@ -70,17 +70,22 @@ body {
 }
 
 .leaderboard-btn {
-    /* background-color: #2d6443; */
+    cursor: pointer;
     background-color: #3a7e55;
     border: 2px solid #0b251f;
     font-size: 16px;
     color: white;
     padding: 8px 20px;
     margin-top: 10px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .center {
     text-align: center;
+}
+
+#player-stats {
+    display: none;
 }
 
 .play {
@@ -121,7 +126,7 @@ body {
 .pos-row-cell {
     background-color: rgb(255, 255, 165);
     width: 84px;
-    height: 75px;
+    height: 74px;
     border-radius: 6px;
     margin: 0px 4px;
     font-size: 30px;
@@ -133,7 +138,7 @@ body {
 .row-cell {
     background-color: rgb(255, 255, 165);
     width: 84px;
-    height: 75px;
+    height: 74px;
     border-radius: 6px;
     font-size: 38px;
     text-align: center;
@@ -149,7 +154,7 @@ body {
 }
 
 .game-row {
-    height: 76px;
+    height: 72px;
     display: flex;
     border-radius: 6px;
     margin: 10px 0px;
@@ -170,7 +175,8 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 26px;
-    margin-top: 42px;
+    margin-top: 30px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .play-box {
@@ -186,6 +192,7 @@ body {
 
 .copyright {
     text-align: center;
+    padding-bottom: 32px;
 }
 
 .margin-bottom {
@@ -225,12 +232,12 @@ body {
     }
 
     .game-row {
-        height: 62px;
+        height: 60px;
     }
 
     .pos-row-cell,
     .row-cell {
-        height: 64px;
+        height: 60px;
         width: 66px;
     }
 

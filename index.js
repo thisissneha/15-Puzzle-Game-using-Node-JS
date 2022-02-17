@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 const staticPath = `${__dirname}/public`;
 
 const PuzzleGame = require('./models/gameModel.js');
+let user_id = 1;
 
 // middleware
 app.use(function (req, res, next) {
@@ -23,7 +24,7 @@ app.get("/", (req, res) => {
     res.send("15-puzzle-game");
 });
 
-app.get("/stats", async (req, res) => {
+app.get("/stats/test_id", async (req, res) => {
     try {
         const details = await PuzzleGame.find({}).sort({
             _id: -1
@@ -50,6 +51,7 @@ app.post("/player-stats", async (req, res) => {
         } = req.body;
         console.log(`Moves : ${moves} and Time : ${time}`);
         await PuzzleGame.create({
+            userID: `abc_${user_id++}`,
             moves,
             time,
             timeStamp: Date.now()

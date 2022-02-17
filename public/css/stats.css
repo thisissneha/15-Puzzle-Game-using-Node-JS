@@ -9,8 +9,11 @@ body {
     height: 100%;
 }
 
-body {
-    background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+.stats-back-btn {
+    top: 0;
+    background-color: transparent;
+    border: hidden;
+    position: absolute;
 }
 
 .centered {
@@ -23,21 +26,19 @@ body {
 
 .leaderboard {
     width: 80%;
-    height: 550px;
-    border-radius: 5%;
+    height: 90%;
+    border-radius: 26px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, .3);
     overflow: hidden;
-}
-
-.leaderboard-header div {
-    float: left;
 }
 
 .title {
     height: 100%;
     width: 100%;
+    top: 40%;
     position: relative;
     display: flex;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .title h3 {
@@ -55,7 +56,7 @@ body {
     width: 100%;
     background-color: #1D8FE1;
     position: absolute;
-    padding: 20px 20px 0 20px;
+    padding: 0 28px;
 }
 
 .leaderboard-body {
@@ -69,6 +70,7 @@ body {
 .fa {
     font-size: 22px;
     color: black;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .padding-font {
@@ -79,8 +81,16 @@ body {
     text-align: center;
 }
 
+.padding-font-timestamp {
+    padding: 12px 10px;
+    font-size: x-large;
+    font-weight: 700;
+    width: 50% !important;
+    text-align: center;
+}
+
 .player-logo {
-    height: 44px;
+    height: 40px;
     margin: 0px 5%;
 }
 
@@ -96,4 +106,42 @@ body {
     font-size: 20px;
     text-align: center;
     line-height: 2;
+}
+
+
+@media screen and (max-width: 866px) {
+    .leaderboard {
+        width: 90%;
+    }
+
+    .timestamp,
+    .padding-font-timestamp {
+        display: none;
+    }
+
+    .player-li {
+        width: 30%;
+    }
+
+    .padding-font {
+        width: 25%;
+    }
+
+    .player-logo {
+        margin: 0px 8%;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .leaderboard {
+        width: 90%;
+    }
+
+    .padding-font {
+        font-size: larger;
+    }
+
+    .player-logo {
+        margin: 0px 5%;
+    }
 }

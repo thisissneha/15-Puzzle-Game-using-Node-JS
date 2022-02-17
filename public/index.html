@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>15 Puzzle Game</title>
+    <script src="https://kit.fontawesome.com/7cb0250e8e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stats.css">
 </head>
 
 <body>
@@ -14,6 +16,32 @@
         <img id="loading-image" src="img/loader.gif" alt="Loading..." />
     </div>
     <div id="continueGame"></div>
+
+    <!-- Player Stats -->
+    <div class="leaderboard centered" id="player-stats">
+        <header class="leaderboard-header">
+            <div class="title">
+                <button class="stats-back-btn" id="stats-back-btn"><i class="fa fa-hand-o-left"></i></button>
+                <h3>Players Stats</h3>
+            </div>
+        </header>
+
+        <div class="leaderboard-body">
+            <div style="display: flex;">
+                <div class="padding-font">Player</div>
+                <div class="padding-font">Player ID</div>
+                <div class="padding-font">Moves</div>
+                <div class="padding-font">Total Time</div>
+                <div class="padding-font-timestamp">TimeStamp</div>
+            </div>
+
+            <ul id="user"></ul>
+
+        </div>
+    </div>
+
+
+    <!-- Game -->
     <div class="game-wrapper-class" id="game-wrapper-class">
         <section class="heading" id="head1">
             <h2 class="font-size">FIFTEEN PUZZLE
@@ -31,8 +59,8 @@
                     <li class="reset" id="reset" onClick="resetGame()"><button class="btn">Reset</button>
                     </li>
                 </ul>
-                <div class="center"><a href="stats.html"><button class="btn leaderboard-btn">Game Statistics
-                        </button></a>
+                <div class="center"><button class="btn leaderboard-btn" id="stats">Game Statistics
+                    </button>
                 </div>
             </section>
             <section class="heading" id="head2">
@@ -111,5 +139,6 @@
     </div>
 </body>
 <script src="js/index.js"></script>
+<script src="js/stats.js"></script>
 
 </html>
