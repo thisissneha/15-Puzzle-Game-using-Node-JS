@@ -431,8 +431,11 @@ function resetGame() {
     `;
     let startGame = document.getElementById("start");
     let stopGame = document.getElementById("pause");
+    let ResumeGame = document.getElementById("resume");
+
     startGame.style.display = "block";
     stopGame.style.display = "none";
+    ResumeGame.style.display = "none";
 }
 
 
